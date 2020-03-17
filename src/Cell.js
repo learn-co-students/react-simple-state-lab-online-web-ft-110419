@@ -5,7 +5,7 @@ export default class Cell extends Component {
     constructor(props) {
         console.log(props)
         super()
-        this.state  = { color: props.value }  //...define initial state with a key of 'color' set to the 'value' prop
+        this.state  = { color: this.props.value }  //...define initial state with a key of 'color' set to the 'value' prop
     }
 
     render() {
