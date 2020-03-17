@@ -4,12 +4,10 @@ import Cell from './Cell.js'
 export default class Matrix extends Component {
   
   genRow = (vals) => {
-    console.log(vals)
     vals.map(val => <Cell color={val} />) // <div className="cell"></div>)  replace me and render a cell component instead!
   }
   
   genMatrix = () => {
-    console.log(this.props.values)
     this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>)
   }
   
