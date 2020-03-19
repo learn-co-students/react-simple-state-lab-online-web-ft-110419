@@ -18,7 +18,7 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5500 react-scripts start",
     "build": "react-scripts build",
     "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json",
     "eject": "react-scripts eject"
